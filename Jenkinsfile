@@ -16,7 +16,7 @@ pipeline {
                 script {
                     app = docker.build("amibas/train-schedule")
                     app.inside {
-                        sh 'echo $(curl localhost:8080)'
+                   
                     }
                 }
             }
